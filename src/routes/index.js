@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
         <p>with appropriate query parameters, such as:</p>
         <code>/cLZojxk94ous/filteredResponses?&filters=...</code>
         <p>For example:</p>
-        <code>http://localhost:3001/cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%22bE2Bo4cGUv49cjnqZ4UnkW%22%2C%22condition%22%3A%22equals%22%2C%22value%22%3A%22Dev%22%7D%2C%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A%222024-06-01%22%7D%5D</code>
+        <code>https://fillout-778eb75e969a.herokuapp.com/cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%22bE2Bo4cGUv49cjnqZ4UnkW%22%2C%22condition%22%3A%22equals%22%2C%22value%22%3A%22Dev%22%7D%2C%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A%222024-06-01%22%7D%5D</code>
     `);
 });
   
