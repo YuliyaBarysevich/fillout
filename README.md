@@ -12,9 +12,9 @@ This project implements a Node.js server using Express to fetch and filter form 
 
 ## Contact
 
-Yuliya Barysevich - 
+Yuliya Barysevich - <barysevich.yuliya@gmail.com>
 
-Project Link: -
+Project Link: - [https://fillout-778eb75e969a.herokuapp.com/](https://fillout-778eb75e969a.herokuapp.com/)
 
 ## Installation
 
@@ -50,7 +50,8 @@ The server provides an endpoint for fetching and filtering form responses. Here'
 
 Make a GET request to the endpoint with the desired query parameters.
 
-Endpoint: 
+Endpoint:
+
 ```javascript
 GET /:formId/filteredResponses
 ```
@@ -66,12 +67,12 @@ Query Parameters:
 - **sort** (optional): Sort order, can be asc or desc.
 - **filters** (required): JSON stringified array of filter conditions.
 
-## Test Cases:
+## Test Cases
 
 1. Fetch all responses for form `cLZojxk94ous` where the name equals "Johnny" and the number of employees is greater than 1.
 
->http://localhost:3001/cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%22bE2Bo4cGUv49cjnqZ4UnkW%22%2C%22condition%22%3A%22equals%22%2C%22value%22%3A%22Johnny%22%7D%2C%7B%22id%22%3A%22fFnyxwWa3KV6nBdfBDCHEA%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A1%7D%5D
+><https://fillout-778eb75e969a.herokuapp.com/cLZojxk94ous/filteredResponses?filters=%5B%7B%22id%22%3A%22bE2Bo4cGUv49cjnqZ4UnkW%22%2C%22condition%22%3A%22equals%22%2C%22value%22%3A%22Johnny%22%7D%2C%7B%22id%22%3A%22fFnyxwWa3KV6nBdfBDCHEA%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A1%7D%5D>
 
 2. Fetch all responses for form `cLZojxk94ous` where the name equals "Dev" and the date for the yearly check-in that is greater than "2024-06-01".
 
->http://localhost:3001/cLZojxk94ous/filteredResponses?limit=100&afterDate=2024-01-01T00:00:00.000Z&filters=%5B%7B%22id%22%3A%22bE2Bo4cGUv49cjnqZ4UnkW%22%2C%22condition%22%3A%22equals%22%2C%22value%22%3A%22Dev%22%7D%2C%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A%222024-06-01%22%7D%5D
+><https://fillout-778eb75e969a.herokuapp.com/cLZojxk94ous/filteredResponses?limit=100&afterDate=2024-01-01T00:00:00.000Z&filters=%5B%7B%22id%22%3A%22bE2Bo4cGUv49cjnqZ4UnkW%22%2C%22condition%22%3A%22equals%22%2C%22value%22%3A%22Dev%22%7D%2C%7B%22id%22%3A%22dSRAe3hygqVwTpPK69p5td%22%2C%22condition%22%3A%22greater_than%22%2C%22value%22%3A%222024-06-01%22%7D%5D>
